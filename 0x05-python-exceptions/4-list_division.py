@@ -2,9 +2,8 @@
 
 
 def list_division(my_list_1, my_list_2, list_length):
-    count = 0
     nlist = []
-    while count < list_length:
+    for count in range(list_length):
         try:
             result = my_list_1[count]/my_list_2[count]
         except ZeroDivisionError:
@@ -18,5 +17,4 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
         finally:
             nlist.append(result)
-        count += 1
     return nlist
