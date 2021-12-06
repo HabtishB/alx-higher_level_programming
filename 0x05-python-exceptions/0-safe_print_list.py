@@ -9,10 +9,10 @@ def safe_print_list(my_list=[], x=0):
             num += 1
 
     except IndexError:
-        print("{} is out of index".format(x))
-        return 0
+       pass
+   
 
-    print("\n")
+    print("", end = '\n')
     return num
 
         
