@@ -9,7 +9,8 @@ def safe_print_list(my_list=[], x=0):
             num += 1
 
     except IndexError:
-        pass
+        print("{} is out of index".format(x))
+        return 0
 
     print("\n")
     return num
