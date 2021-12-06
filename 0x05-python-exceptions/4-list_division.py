@@ -4,7 +4,7 @@
 def list_division(my_list_1, my_list_2, list_length):
     count = 0
     nlist = []
-    while count < max(len(my_list_1), len(my_list_2)):
+    while count < list_length:
         try:
             result = my_list_1[count]/my_list_2[count]
         except ZeroDivisionError:
