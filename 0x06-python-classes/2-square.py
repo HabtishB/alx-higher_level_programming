@@ -7,7 +7,7 @@ class Square:
         """ initialization """
         if type(size) is not int:
             raise TypeError("size must be an integer")
-        else if size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self._Squae__size = size
+            self._Square__size = size
