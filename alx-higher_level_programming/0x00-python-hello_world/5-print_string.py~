@@ -1,6 +1,0 @@
-#!/usr/bin/python3
-Str = "Holberton School"
-print("Str * 3")
-print("Str[:9]")
-
-
