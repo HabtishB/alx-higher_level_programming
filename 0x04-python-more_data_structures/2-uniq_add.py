@@ -5,5 +5,5 @@ def uniq_add(my_list=[]):
     for ints in my_list:
         if ints not in new_list:
             new_list.append(ints)
-            total += ints 
+            total += ints
     return total
