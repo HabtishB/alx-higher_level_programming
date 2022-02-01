@@ -56,7 +56,3 @@ class Rectangle:
             return hash_rep
         else:
             return ""
-
-    def __del__(self):
-        """prints a message when an instance of a rectangle is deleted """
-        print("Bye rectangle...")
