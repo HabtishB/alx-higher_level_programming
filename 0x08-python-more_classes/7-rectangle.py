@@ -55,8 +55,8 @@ class Rectangle:
         """ returns a '#' respresentation of the rectangle"""
         if self.__width != 0 and self.__height != 0:
             hash_rep = ""
-            hash_rep += "\n".join(self.print_symbol * self.__width for i in range
-                                  (self.__height))
+            hash_rep += "\n".join(str(self.print_symbol) * self.__width
+                                  for i in range(self.__height))
             return hash_rep
         else:
             return ""
