@@ -54,3 +54,5 @@ class Rectangle:
             hash_rep += "\n".join("#" * self.__width for i in range
                                   (self.__height))
             return hash_rep
+        else:
+            return ""
