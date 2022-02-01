@@ -49,7 +49,8 @@ class Rectangle:
 
     def __str__(self):
         """ returns a '#' respresentation of the rectangle"""
-        if self.__width != 0 and self.__.height != 0:
+        if self.__width != 0 and self.__height != 0:
+            hash_rep = ""
             hash_rep += "\n".join("#" * self.__width for i in range
                                   (self.__height))
             return hash_rep
