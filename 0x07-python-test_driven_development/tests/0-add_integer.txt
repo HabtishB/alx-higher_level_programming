@@ -47,14 +47,21 @@ case 7: No argument given
 
 -----------------------------------------------------------------------
 case 8: Overflow
-     >>> add_integer(10e100**2, 1)
+     >>> add_integer(10e1000**2, 1)
      Traceback (most recent call last):
      ...
      OverflowError: cannot convert float infinity to integer
 
 -----------------------------------------------------------------------
 case 9:adding float(NaN)
-     >>> add_integer(float('nan', 2))
+     >>> add_integer(float('nan'), 2)
      Traceback (most recent call last):
      ...
-     ValueError: cannot convert float Nan to integer
+     ValueError: cannot convert float NaN to integer
+
+-----------------------------------------------------------------------
+case 10:adding (None)
+     >>> add_integer(None)
+     Traceback (most recent call last):
+     ...
+     TypeError: a must be an integer
