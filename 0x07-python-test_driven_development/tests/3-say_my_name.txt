@@ -30,9 +30,14 @@ case 4: Inputting non string arguments
      ...
      TypeError: first_name must be a string
 
-
 -----------------------------------------------------------------------
 case 5: Inputting only last_name and emptry first name
      >>> say_my_name("", "Mehari")
      My name is  Mehari
 
+-----------------------------------------------------------------------
+case 6: Inputting missing arguments
+     >>> say_my_name()
+     Traceback (most recent call last):
+     ...
+     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
