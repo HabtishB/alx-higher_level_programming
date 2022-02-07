@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Contains a module that contains a class MyList that 
+""" Contains a module that contains a class MyList that
 inhertis from list - object
 """
 
