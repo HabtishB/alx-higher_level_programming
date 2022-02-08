@@ -16,13 +16,16 @@ Traceback (most recent call last):
 ...
 ValueError: integer must be greater than 0
 
-
+--------------------------------------------
+case 3: validating a negative integer
+>>> b.integer_validator("integer", -5)
 Traceback (most recent call last)
 ...
 ValueError: integer must be greater than 0
 
+
 ---------------------------------------------
-case 3: checking for no arugument
+case 4: checking for no arugument
 
 >>> b.integer_validator()
 Traceback (most recent call last):
@@ -30,11 +33,28 @@ Traceback (most recent call last):
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 ---------------------------------------------
-case 4: checking for only one arugument
+case 5: checking for only one arugument
 
 >>> b.integer_validator("integer")
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
 
+
+---------------------------------------------
+case 6: checking for two string arugument
+
+>>> b.integer_validator("name", "John")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+
+
+---------------------------------------------
+case 7: checking for a tuple
+
+>>> b.integer_validator("integer", (1, 2))
+Traceback (most recent call last):
+...
+TypeError: integer must be an integer
 
