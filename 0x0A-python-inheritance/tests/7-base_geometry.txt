@@ -58,3 +58,20 @@ Traceback (most recent call last):
 ...
 TypeError: integer must be an integer
 
+---------------------------------------------
+case 8: checking for area
+
+>>> b.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+---------------------------------------------
+case 9: checking for area
+
+>>> b.area(10)
+Traceback (most recent call last):
+...
+TypeError: area() takes 1 positional argument but 2 were given
+
+
