@@ -2,7 +2,7 @@
 """ Contains the function "inherits_from.py" """
 
 
-def inhertis_from(obj, a_class):
+def inherits_from(obj, a_class):
     """ This functions returns True if object is instance of
     inherited from class otherwise return False"""
 
