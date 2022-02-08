@@ -1,0 +1,40 @@
+Test for 7-base_geometry.py
+========================
+
+case 1: import
+>>> BaseG = __import__('7-base_geometry').BaseGeometry
+
+
+-------------------------------------------
+case 2: Validating integer
+
+>>> b = BaseG()
+>>> b.integer_validator("integer", 32)
+
+>>> b.integer_validator("integer", 0)
+Traceback (most recent call last):
+...
+ValueError: integer must be greater than 0
+
+
+Traceback (most recent call last)
+...
+ValueError: integer must be greater than 0
+
+---------------------------------------------
+case 3: checking for no arugument
+
+>>> b.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+---------------------------------------------
+case 4: checking for only one arugument
+
+>>> b.integer_validator("integer")
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+
