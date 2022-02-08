@@ -4,7 +4,7 @@ or an instance of a class that inherited from the specified class
 """
 
 
-def is_kind_of_clas(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """ Is the function that checks if a class is an instance of
     an object or an instance of a class that inherited from the
     given class """
