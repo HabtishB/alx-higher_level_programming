@@ -1,6 +1,10 @@
 #!/usr/bin/python
-""" Module base geometry """
+""" Module that contains a class 'BaseGeometry 
+"""
 
 
 class BaseGeometry:
+
+    """ An empty class 
+    """
     pass
