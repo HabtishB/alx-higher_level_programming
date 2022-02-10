@@ -5,9 +5,9 @@
 def add_attribute(obj, attribute, value):
     """ This method adds a new attribute to an object """
 
-    if '__dict__' not in dir(obj):
+    if '__dict__' not in dir(obj): 
         raise TypeError("can't add a new attribute")
     if '__slots__' in dir(obj):
         raise TypeError("can't add new attribute")
-    else:
+    if '__setattr__' in dir(obj):
         setattr(obj, attribute, value)
