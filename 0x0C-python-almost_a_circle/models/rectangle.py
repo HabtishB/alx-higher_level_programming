@@ -4,12 +4,12 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ Defines the class Rectangles, this class 
+    """ Defines the class Rectangles, this class
     inhertis from the Base module """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ This inistantiates the a rectangle object,
-            the id is inherited from the Base module 
+            the id is inherited from the Base module
             Args:
                   width - width of the rectangle
                   height - height of the rectangle
@@ -39,14 +39,13 @@ class Rectangle(Base):
             raise ValueError("width muust be greate >= 0")
         else:
             self.__width = value
-  
+
     @property
     def height(self):
         """ height getter
         """
         return self.__height
 
-    
     @height.setter
     def height(self, value):
         """ height setter
@@ -103,8 +102,9 @@ class Rectangle(Base):
             print(" " * self.x + "#" * tmp)
 
     def __str__(self):
-        """ define the rectangle in strings """    
-        return "[Rectangle] ({0}) {3}/{4} - {1}/{2}".format(self.id, self.__width, self.__height, self.__x, self.__y)
+        """ define the rectangle in strings """
+        return "[Rectangle] ({0}) {3}/{4} - {1}/{2}".format(
+            self.id, self.__width, self.__height, self.__x, self.__y)
 
     def update(self, *args, **kwargs):
         """ This updates the Rectangle attributes
@@ -113,6 +113,6 @@ class Rectangle(Base):
         if args is not None and len(args) is not 0:
             for i in range(len(args)):
                 setattr(self, attributes[i], args[i])
-                
+
         for key, value in kwargs.items():
             setattr(self, key, value)
