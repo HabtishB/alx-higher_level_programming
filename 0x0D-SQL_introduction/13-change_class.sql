@@ -1,4 +1,4 @@
---removes all records with score <= 5
+-- removes all records with score <= 5
 
 USE hbtn_0c_0;
 DELETE FROM second_table
