@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS second_table(
 );
 
 INSERT INTO second_table(id, name, score)
-VALUES (1, "JOHN", 10),
-       (2, "Alex", 3),
-       (3, "Bob", 14),
-       (4, "George", 8);
+VALUES ROW(1, "JOHN", 10),
+       ROW(2, "Alex", 3),
+       ROW(3, "Bob", 14),
+       ROW(4, "George", 8);
