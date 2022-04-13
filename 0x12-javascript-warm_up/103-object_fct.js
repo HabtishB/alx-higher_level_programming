@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-let myObject = {
-  type: 'Object',
+const myObject = {
+  type: 'object',
   value: 12
 };
 
