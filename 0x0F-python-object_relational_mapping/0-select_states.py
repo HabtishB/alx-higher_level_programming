@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-
 """
+This script lists all states from the database hbtn_0e_0_usa
+It takes 3 arguments: username, password and database
+It runs on localhost port 3306, and the results muus be ordered in 
+ascending order by states.id
 """
 
 import sys
