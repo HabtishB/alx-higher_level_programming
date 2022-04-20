@@ -20,10 +20,9 @@ if __name__ == '__main__':
     cursor.execute("SELECT cities.id, cities.name, states.name FROM states\
                     INNER JOIN cities ON states.id = cities.state_id\
                     WHERE states.name like %s\
-                    ORDER BY cities.id ASC", (argv[4],))
+                    ORDER BY cities.id ASC", (sys.argv[4],))
 
     cities = cursor.fetchall()
-
-    print(",".join([city[0] for city in cities]))
+    print(", ".join(city[1] for city in cities))
     cursor.close()
     db.close()
