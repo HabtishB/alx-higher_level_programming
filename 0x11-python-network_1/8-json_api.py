@@ -12,9 +12,9 @@ if __name__ == "__main__":
     res = requests.post('https://0.0.0.0:5000/search_user', data={'query': q})
     try:
         dic = res.json()
-        if dic == {}:
+        if dic.get('id', None) is None:
             print('No result')
         else:
             print("[{}] {}".format(dic.get('id'), dic.get('name')))
-    except ValueError:
+    except Exception:
         print('Not a valid JSON')
