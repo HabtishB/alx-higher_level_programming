@@ -4,6 +4,7 @@
 find peak task
 """
 
+
 def find_peak(list_of_integers):
     """ finds a peak in  unsorted integers """
     if list_of_integers:
